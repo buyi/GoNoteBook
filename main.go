@@ -63,4 +63,12 @@ func main() {
 	number["2"] = 2
 	fmt.Println("%v", number)
 
+	gotoFunc()
+}
+func gotoFunc() {
+	i := 0
+Here:
+	fmt.Println("%v", i)
+	i++
+	goto Here
 }
