@@ -17,7 +17,7 @@ func main() {
 	stmt, err := db.Prepare("INSERT userinfo SET username=?,departname=?,created=?")
 	checkErr(err)
 
-	res, err := stmt.Exec("astaxie", "dev", "2012-12-09")
+	res, err := stmt.Exec("astaxie", "我", "2012-12-09")
 	checkErr(err)
 
 	id, err := res.LastInsertId()
